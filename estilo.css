@@ -1,0 +1,226 @@
+:root {
+    --Preto: #2C2626;
+    --Preto75: #2C2626bf;
+    --azul: #44C4FF;
+    --azul50: #44c4ff80;
+    --azul25: #44C4FF40;
+    --verde: #7EFF89;
+    --verde50: #7EFF8980;
+    --verde25: #7EFF8940;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    z-index: 9999;
+    position: absolute;
+    height: 7vh;
+    background-color: var(--azul);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .nav1 {
+        margin-top: 1vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        width: 25vw;
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+            color: var(--Preto);
+            text-decoration: none;
+        }
+    }
+
+    .nav2 {
+        margin-top: 1vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        width: 25vw;
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+            color: var(--Preto);
+            text-decoration: none;
+        }
+    }
+}
+
+.header1 {
+    position: absolute;
+    top: 2vh;
+    fill: var(--azul);
+    height: 15vh;
+    width: 100%;
+    z-index: 99;
+}
+
+.header2 {
+    position: absolute;
+    top: 5vh;
+    fill: var(--azul50);
+    height: 15vh;
+    width: 100%;
+    z-index: 98;
+}
+
+.header3 {
+    position: absolute;
+    top: 7vh;
+    fill: var(--azul25);
+    height: 15vh;
+    width: 100%;
+    z-index: 98;
+}
+
+.wave0 {
+    position: absolute;
+    top: 5vh;
+    background-color: var(--verde);
+    height: 35vh;
+    width: 100%;
+    z-index: 97;
+}
+
+.wave0-info {
+    margin-top: 6vh;
+    position: absolute;
+    top: 4vh;
+    background-color: var(--verde);
+    height: 30vh;
+    width: 100%;
+    z-index: 9999;
+}
+
+.wave1 {
+    position: absolute;
+    fill: var(--verde);
+    top: 40vh;
+    height: 15vh;
+    width: 100%;
+    z-index: 96;
+}
+
+.wave2 {
+    position: absolute;
+    top: 43vh;
+    fill: var(--verde50);
+    height: 15vh;
+    width: 100%;
+    z-index: 95;
+}
+
+.wave3 {
+    position: absolute;
+    top: 45vh;
+    fill: var(--verde25);
+    height: 15vh;
+    width: 100%;
+    z-index: 94;
+}
+
+.logo {
+    margin-right: 1vw;
+    height: 7vh;
+    top: 1vh;
+}
+
+.login {
+    background-color: transparent;
+    padding: 1vh 1.5vh;
+    color: var(--Preto);
+    border-color: var(--Preto);
+    border-radius: 1vh;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.cadastro {
+    background-color: var(--Preto);
+    padding: 1vh 1.5vh;
+    color: var(--azul);
+    border-color: var(--Preto);
+    border-radius: 1vh;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.darkMode {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.searchBar {
+    margin-top: 2vh;
+    width: 33%;
+    padding: 1vh;
+    border: none;
+    border-radius: 1vw;
+    background-image: url(Imagens/lupa.png);
+    background-size: 2vh;
+    background-repeat: no-repeat;
+    background-position: 31vw;
+}
+
+.searchBar::placeholder {
+    color: var(--Preto75)
+}
+
+.searchBar:focus {
+    outline: none;
+}
+
+#text-wave0 {
+    margin-left: 5vw;
+    margin-top: 8vh;
+    font-size: 4vh;
+    width: 35vw;
+}
+
+#projetosDestaque {
+    height: 1vh;
+    width: 100vw;
+    position: absolute;
+    top: 67vh;
+}
+
+#destaqueTitle {
+    color: var(--Preto);
+    font-size: large;
+    margin-left: 6vw;
+    margin-bottom: 1vh;
+}
+
+#projetos-destaque {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img{
+        width: 25vw;
+        border-radius: 15px;
+    }
+}
+
+#destaque1 {
+    margin-left: 6vw;
+}
+
+#destaque3 {
+    margin-right: 6vw;
+}
